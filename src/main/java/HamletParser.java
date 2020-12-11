@@ -1,3 +1,5 @@
+import com.sun.org.apache.xml.internal.resolver.readers.OASISXMLCatalogReader;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,6 +14,7 @@ public class HamletParser {
     private String hamletData;
 
     String hamletToLeonREGEX = "[Hh][Aa][Mm][Ll][Ee][Tt]";
+    //String hamletToLeonREGEX = "(?i)\\bHamlet\\b";
     String horatioToTariqREGEX = "[Hh][Oo][Rr][Aa][Tt][Ii][Oo]";
     public HamletParser(){
         this.hamletData = loadFile();
