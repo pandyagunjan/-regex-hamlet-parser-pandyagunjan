@@ -42,15 +42,15 @@ public class HamletParser {
     public String getHamletData(){
         Pattern pattern =  Pattern.compile(hamletToLeonREGEX);
         Matcher match = pattern.matcher(hamletData);
-        match.replaceAll("Leon");
-       return  hamletData.replaceAll(hamletToLeonREGEX,"Leon");
+        //match.replaceAll("Leon");
+       return  match.replaceAll("Leon");
        // return hamletData;
     }
     public String getHoratioData(){
         Pattern pattern =  Pattern.compile(horatioToTariqREGEX);
         Matcher match = pattern.matcher(hamletData);
-        match.replaceAll("Tariq");
-        return hamletData.replaceAll(horatioToTariqREGEX,"Tariq");
+
+        return  match.replaceAll("Tariq");
     }
 
     public int hamletNumbers(){
